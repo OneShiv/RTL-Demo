@@ -8,7 +8,6 @@ const NewPost = () => {
   const [postSuccess, setPostSuccess] = useState(false);
   const submitHandler = async e => {
     e.preventDefault();
-    console.log("Hello");
     let req = await fetch("https://jsonplaceholder.typicode.com/posts", {
       method: "post",
       body: JSON.stringify(post)
@@ -38,7 +37,7 @@ const NewPost = () => {
           }
         />
         <label htmlFor="post-description" name="title">
-          Enter Title for post
+          Enter Description for post
         </label>
         <input
           id="post-description"

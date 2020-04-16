@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Card from "../../components/Card/Card";
 import "./Posts.css";
 
@@ -26,9 +26,9 @@ const Posts = () => {
   }
   return (
     <div>
-      {/* <Link className="addPost" to="/new-post">
+      <Link className="addPost" to="/new-post">
         +
-      </Link> */}
+      </Link>
       <h1>All Posts</h1>
       {el}
     </div>
